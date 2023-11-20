@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
+  --bs-primary-rgb: 140, 82, 255;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -79,6 +79,112 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+/* Styles for screens that are 600px wide or less */
+@media screen and (max-width: 600px) {
+  body {
+      font-size: 18px;
+  }
+
+  .container {
+      width: 100%;
+      padding: 0;
+  }
+
+  #navbarResponsive {
+    background-color: #3d3d3d;
+    border-radius: 10px;
+    outline: 2px solid #fff3cd;
+  }
+
+  .disrupt {
+    font-size: 18px;
+  }
+}
+
+/* Styles for screens that are between 601px and 900px wide */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+      font-size: 20px;
+  }
+
+  .disrupt-navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+      width: 85%;
+      padding: 0 15px;
+
+      #navbarResponsive {
+        background-color: #3d3d3d;
+        border-radius: 10px;
+        outline: 2px solid #fff3cd;
+    }
+  }
+
+  .disrupt {
+    font-size: 30px;
+  }
+}
+
+/* Styles for screens that are 901px wide or more */
+@media screen and (min-width: 901px){
+  body {
+      font-size: 22px;
+  }
+
+  .container {
+      width: 70%;
+      margin: 0 auto;
+  }
+
+  .disrupt {
+    font-size: 50px;
+  }
+}
+
+.disrupt_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disrupt-text {
+  position: relative;
+  width: fit-content;
+  top: 15px;
+  left: -137px;
+}
+
+.disrupt {
+  font-family: 'Glitch';
+  position: absolute;
+  font-size: 50px;
+}
+
+
+.blog-card {
+  border: 2px solid #eb4136;
+  padding: 10px;
+}
+
+.blog-post {
+  background-color: #3d3d3d; /* Replace with the background color of the Disrupt page */
+  color: #e8e8e8; /* Replace with the text color of the Disrupt page */
+  font-family: Arial, sans-serif; /* Replace with the font of the Disrupt page */
+  /* Add other CSS properties as needed */
+}
+
+.blog-post h1 {
+  margin-top: 0;
+}
+
+.blog-post h1 {
+  font-family: 'ARCHIVE'; /* Replace with your font */
+}
+
 @font-face {
   font-family: 'Glitch';
   src: url('fonts/RubikGlitch-Regular.ttf') format('woff2'),
@@ -104,7 +210,7 @@
 }
 
 .nav-link, .discover-font, .disrupt-font {
-  font-size: 2rem; /* Replace with the font size of the other buttons */
+  font-size: 2rem; /* Adjust as needed */ 
 }
 
 .navbar-nav {
@@ -147,7 +253,7 @@ body {
   background-color: #333;
 }
 
-#container {
+#navbar_container {
   width: 70vw;
   margin: 30vw auto;
 }
@@ -169,12 +275,12 @@ h10 {
 }
 
 h10:nth-child(2) {
-  color: #8c52ff;
+  color: #eb4136;
   animation: glitch2 2.5s infinite;
 }
 
 h10:nth-child(3) {
-  color: #8c52ff;
+  color: #eb4136;
   animation: glitch3 2.5s infinite;
 }
 /*Keyframes*/
