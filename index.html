@@ -17,21 +17,25 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <video autoplay loop muted style="position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+            <source src="assets/videos/video (1080p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg text-uppercase fixed-top disrupt-navbar" id="mainNav" style="background-color: #3d3d3d;">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg text-uppercase fixed-top disrupt-navbar" id="mainNav" style="justify-content: center;">
+            <div class="container" id="bar" style="margin-left: 0; margin-right: 0; width: 100%; border-radius: 20px;">
                 <a class="navbar-brand" href="#page-top">
                     <img class="masthead-avatar" src="assets/images/CADLogoTextWhite.png" alt="Ctrl Alt Discover" style="height: 200px;"/>
                 </a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="navbartoggle" class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1">
-                            <a id="logoButton" class="nav-link py-3 px-0 px-lg-3 rounded" href="#page-top">
-                                <span class="outlined" id="logoText" class="masthead-avatar">Disrupt</span>
+                            <a id="logoButton" class="nav-link py-3 px-0 px-lg-3 rounded" href="/index.html#Disrupt">
+                                <span class="outlined" id="logoText" class="masthead-avatar" style="color: #eb4136; font-family: Glitch; letter-spacing: 3px; font-size: x-large;">Disrupt</span><span class="outlined" >
                             </a>
                         </li>                        
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
@@ -41,14 +45,10 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead text-black text-center" style="background-color: #3d3d3d;">
+        <header class="masthead text-black text-center" style="background-color: transparent; padding-top: 200px;">
             <div class="header_container d-flex align-items-center flex-column">
-                <video autoplay loop muted style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
-                    <source src="assets/videos/video (1080p).mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
                 <!-- Ctrl Alt Discover Logo -->
-                <img class="masthead-avatar mb-5" src="assets/images/CADLogo.png" alt="Ctrl Alt Discover" style="width: 250px; z-index: 1"/>
+                <img class="masthead-avatar mb-5" src="assets/images/CADLogo.png" alt="Ctrl Alt Discover" style="width: 250px; z-index: 0; margin-bottom: 30px;"/>
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0" style="color: #e8e8e8; font-family: 'ARCHIVE'; z-index: 1">Ctrl Alt <span style="color: #8c52ff; z-index: 1">Discover</span></h1>
                 <!-- Icon Divider-->
@@ -61,7 +61,7 @@
                 <p class="masthead-subheading font-weight-light mb-0" style="color: #e8e8e8; z-index: 1">Gabriel Q. Shanahan - <span style="color: #8c52ff; z-index: 1">CEO & Founder</span></p>
             </div>
         </header>
-
+        <div style="height: 2px; background-color: black;"></div>
         <!-- About Section-->
         <section class="page-section text-white mb-0" id="about" style="background-color: #8c52ff; z-index: 1; position: relative;">
             <div class="about_container" style="z-index: 1">
@@ -74,7 +74,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
+                <div class="about-card row mx-auto">
                     <div class="col-lg-4 ms-auto"><p class="lead"><span style="font-family: ARCHIVE;">Ctrl Alt </span><span style="color: #3d3d3d; font-family: ARCHIVE;">Discover</span> embodies the fusion of technology and innovation, a dynamic space where exploration meets technological advancement. Our vision? To bridge the gap between nature and technology, fostering a harmonious relationship that leverages the best of both worlds.</p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">Join us on this journey as we delve into the realms of tech, unveiling innovative solutions, and navigating uncharted territories while fostering a community dedicated to discovery and progress.</p></div>
                 </div>
@@ -90,7 +90,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
+                <div class="about-card row mx-auto">
                     <div class="col-lg-4 ms-auto"><p class="lead"><span style="font-family: ARCHIVE;">Ctrl Alt </span><span class="outlined" style="color: #eb4136; font-family: Glitch; letter-spacing: 1px;">DISRUPT</span> redefines cybersecurity by challenging norms and offering proactive defense strategies. Our mission is to empower individuals and businesses with insights that fortify digital defenses against evolving threats.</p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">We're more than a blog; we're catalysts for change in cybersecurity. With innovation at our core, we aim to equip our audience with the tools to navigate and disrupt the evolving threat landscape.</p></div>
                 </div>
@@ -106,18 +106,19 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
+                <div class="about-card row mx-auto">
                     <div class="col-lg-4 ms-auto"><p class="lead">Hello! I'm Gabriel, the mind behind <span style="font-family: ARCHIVE;">Ctrl Alt </span><span style="color: #3d3d3d; font-family: ARCHIVE;">Discover</span> and, subsequently, <span style="font-family: ARCHIVE;">Ctrl Alt </span><span class="outlined" style="color: #eb4136; font-family: Glitch; letter-spacing: 1px;">DISRUPT</span>. With a BS in Computer Science, specializing in Cybersecurity from Tennessee Tech University, and over a year of hands-on experience as a software test engineer within Agile teams, I'm passionate about unraveling the nuances of our digital world.</p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">At Ctrl Alt Discover, my mission is to delve into the depths of technology, uncovering insights that drive progress. Join me on this journey through the evolving tech landscape, where I share expertise and empower exploration in the ever-evolving digital sphere.</p></div>
                 </div>
             </div>
         </section>
-
+        <div style="height: 2px; background-color: black;"></div>
         <!-- Ctrl Alt Disrupt -->
-        <section class="page-section text-white mb-0" id="Disrupt" style="background-color: #3d3d3d;">
+        <section class="page-section text-white mb-0" id="Disrupt" style="background-color: transparent; margin-top: 0; padding-top: 0;">
             <div id="disrupt_container" class="disrupt_container d-flex align-items-center flex-column" style="position: relative;">
+                
                 <!-- Ctrl Alt Discover Logo -->
-                <img class="masthead-avatar mb-5" src="assets/images/DisruptLogo.gif" alt="Ctrl Alt Disrupt" style="width: 300px;" id="DisruptLogo"/>
+                <img class="masthead-avatar mb-5" src="assets/images/CtrlAltDisrupt_Trans.svg" alt="Ctrl Alt Disrupt" style="width: 300px; margin-bottom: 0px; padding-top: 200px;" id="DisruptLogo;"/>
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0" style="color: #e8e8e8; font-family: 'ARCHIVE'; font-size: 50px;">Ctrl Alt</h1>
                 <dive class="disrupt-text">
@@ -134,13 +135,13 @@
 
                 <div class="blog-grid">
                     <div class="blog-card">
-                      <img src="assets/images/Blog1.png" alt="Post Image" style="max-width: 500px;">
+                      <img src="assets/images/Blog1.png" alt="Post Image" style="max-width: 100%; height: auto;">
                       <h2 class="blog-post-title" style="font-family: ARCHIVE;">Welcome to Ctrl Alt Disrupt</h2>
-                      <p class="blog-post-meta">Nov 13, 2023 by <a href="#Founder">GQS</a></p>
+                      <p class="blog-post-meta">Nov 13, 2023 by <a href="#Founder"  style="color: #eb4136;">GQS</a></p>
                       <p>Hey there, tech enthusiasts, cybersecurity buffs, and digital wanderers!
                         <br/><br/>
                         Welcome to the Ctrl Alt Disrupt blog, where we're not just talking tech, we're shaking up the norms and challenging the status quo in...</p>
-                      <a href="blog1.html">Read More</a>
+                      <a href="blog1.html" style="color: #eb4136;">Read More</a>
                     </div>
                     <!-- Repeat the above structure for other blog posts -->
                   </div>
@@ -150,9 +151,9 @@
                 
             </div>
         </section>
-
+        <div style="height: 2px; background-color: black;"></div>
         <!-- Contact Section-->
-        <section class="page-section" id="contact" style="background-color: #e8e8e8;">
+        <section class="page-section" id="contact" style="background-color: #e8e8e8; position: relative; z-index: 2;">
             <div class="contact_container">
                 <!-- Contact Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="color: #3d3d3d; font-family: 'ARCHIVE';">Contact Me</h2>
@@ -219,8 +220,9 @@
                 </div>
             </div>
         </section>
+        <div style="height: 2px; background-color: black; position: relative; z-index: 2;"></div>
         <!-- Footer-->
-        <footer class="footer text-center" style="background-color: #3d3d3d;">
+        <footer class="footer text-center" style="background-color: #3d3d3d; position: relative; z-index: 2;">
             <div class="footer_container">
                 <div class="row">
                     <!-- Footer Location-->
@@ -233,20 +235,20 @@
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4" style="color: #e8e8e8; font-family: 'ARCHIVE';">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/gabriel-shanahan/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        
-                        
+                        <a href="#about">
+                            <h4 class="text-uppercase mb-4" style="color: #e8e8e8; font-family: 'ARCHIVE';">About Ctrl Alt Discover</h4>
+                        </a>
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white" style="background-color: #3d3d3d;">
+        <div class="copyright py-4 text-center text-white" style="background-color: #3d3d3d; position: relative; z-index: 2;">
             <div class="copyright_container" style="color: #e8e8e8; font-family: 'ARCHIVE';"><small>Copyright &copy; Ctrl Alt Discover LLC 2023</small></div>
         </div>
 
@@ -277,54 +279,21 @@
 });
 
 window.addEventListener('scroll', function() {
-    var newPage = document.querySelector('#Disrupt');
-    var header = document.querySelector('.masthead');
-    var logoText = document.getElementById('logoText');
-    var rect = newPage.getBoundingClientRect();
-    if (rect.top <= 0) {
-        // Disrupt page is in view or has been passed
-        header.style.backgroundColor = '#eb4136'; // Replace with the color you want
-        logoText.textContent = 'DISCOVER'; // Replace with the new text
-        logoText.classList.remove('discover-font');
-        logoText.classList.add('disrupt-font');
+  var navbar = document.getElementById('mainNav');
+  var bar = document.getElementById('bar');
+  var aboutSection = document.getElementById('about');
+  var aboutPosition = aboutSection.getBoundingClientRect().top;
+
+  if (window.scrollY >= aboutPosition) {
+    navbar.style.backgroundColor = '#3d3d3d'; // Change this to the color you want
+    if (window.matchMedia("(max-width: 991px)").matches) {
+        bar.style.backgroundColor = '#3d3d3d';
     } else {
-        // Disrupt page is not in view
-        header.style.backgroundColor = '#3d3d3d'; // Replace with the original color
-        logoText.textContent = 'DISRUPT'; // Replace with the original text
-        logoText.classList.remove('disrupt-font');
-        logoText.classList.add('discover-font');
+        bar.style.backgroundColor = 'transparent';
     }
-});
-
-//logo button
-document.getElementById('logoButton').addEventListener('click', function() {
-    var logoText = document.getElementById('logoText');
-    var logoButton = document.getElementById('logoButton');
-    if (logoButton.getAttribute('href') === '#page-top') {
-        // If the current page is the original page, navigate to the Ctrl Alt Disrupt page and change the text
-        logoButton.setAttribute('href', '#DisruptLogo');
-        logoText.textContent = 'CAD';
-    } else {
-        // If the current page is the Ctrl Alt Disrupt page, navigate back to the original page and change the text back
-        logoButton.setAttribute('href', '#page-top');
-        logoText.textContent = 'Disrupt';
-    }
-});
-
-window.addEventListener('load', function() {
-    var navbar = document.querySelector('#mainNav');
-    var disruptPage = document.querySelector('#Disrupt');
-
-    var observer = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting) {
-            navbar.style.backgroundColor = '#eb4136'; // Replace with your color
-            navbar.style.color = '#3d3d3d'; // Replace with your color
-        } else {
-            navbar.style.backgroundColor = '#3d3d3d'; // Replace with original color
-            navbar.style.color = '#FFFFFF'; // Replace with original color
-        }
-    }, { threshold: 0.3 });
-
-    observer.observe(disruptPage);
+  } else {
+    navbar.style.backgroundColor = 'transparent';
+    bar.style.backgroundColor = 'transparent';
+  }
 });
 </script>
