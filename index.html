@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1">
-                            <a id="logoButton" class="nav-link py-3 px-0 px-lg-3 rounded" href="/index.html#Disrupt">
+                            <a id="logoButton" class="nav-link py-3 px-0 px-lg-3 rounded" href="#Disrupt">
                                 <span class="outlined" id="logoText" class="masthead-avatar" style="color: #eb4136; font-family: Glitch; letter-spacing: 3px; font-size: x-large;">Disrupt</span><span class="outlined" >
                             </a>
                         </li>                        
@@ -141,7 +141,7 @@
                       <p>Hey there, tech enthusiasts, cybersecurity buffs, and digital wanderers!
                         <br/><br/>
                         Welcome to the Ctrl Alt Disrupt blog, where we're not just talking tech, we're shaking up the norms and challenging the status quo in...</p>
-                      <a href="blog1.html" style="color: #eb4136;">Read More</a>
+                      <a href="https://ctrlaltdiscover.com/blog1.html" style="color: #eb4136;">Read More</a>
                     </div>
                     <!-- Repeat the above structure for other blog posts -->
                     <div class="blog-card">
@@ -151,7 +151,7 @@
                         <p>Hey there, tech enthusiasts, cybersecurity buffs, and digital wanderers!
                           <br/><br/>
                           Welcome to the Ctrl Alt Disrupt blog, where we're not just talking tech, we're shaking up the norms and challenging the status quo in...</p>
-                        <a href="blog1.html" style="color: #eb4136;">Read More</a>
+                        <a href="https://ctrlaltdiscover.com/blog1.html" style="color: #eb4136;">Read More</a>
                       </div>
                   </div>
 
@@ -275,19 +275,62 @@
 
 <script>
     //url prettifier
-$('a').click(function(event) {
-    event.preventDefault();
+    window.addEventListener('DOMContentLoaded', (event) => {
+    // Get all the anchor tags
+    var anchors = document.querySelectorAll('a');
 
-    // Get the href attribute
-    var href = $(this).attr('href');
+    // Loop through all the anchor tags
+    for (let i = 0; i < anchors.length; i++) {
+        // Add an event listener to each anchor tag
+        anchors[i].addEventListener('click', function(e) {
+            // Get the href attribute
+            var href = this.getAttribute('href');
 
-    // Remove the '#' from the href attribute
-    var id = href.substring(1);
+            // If the href attribute starts with '#'
+            if (href.startsWith('#')) {
+                // Prevent the default action of the anchor tag
+                e.preventDefault();
 
-    // Scroll to the element
-    $('html, body').animate({
-        scrollTop: $(id).offset().top
-    }, 500);
+                // Get the element with the ID specified in the href attribute
+                var element = document.querySelector(href);
+
+                // If the element exists
+                if (element) {
+                    // Scroll to the element
+                    element.scrollIntoView({behavior: "smooth"});
+
+                    // Replace the '#' with '/Home/' in the href attribute
+                    var newHref = href.replace('#', '/Home/');
+
+                    // Change the URL without reloading the page
+                    history.pushState({}, '', newHref);
+                }
+            } else {
+                // Allow the default action
+                window.location.href = href;
+            }
+        });
+    }
+});
+
+window.addEventListener('popstate', function(event) {
+    // Get the current URL
+    var currentUrl = window.location.pathname;
+
+    // If the current URL starts with '/Home/'
+    if (currentUrl.startsWith('/Home/')) {
+        // Replace '/Home/' with '#' in the current URL
+        var newUrl = currentUrl.replace('/Home/', '#');
+
+        // Get the element with the ID specified in the new URL
+        var element = document.querySelector(newUrl);
+
+        // If the element exists
+        if (element) {
+            // Scroll to the element
+            element.scrollIntoView({behavior: "smooth"});
+        }
+    }
 });
 
     //navbar scroll
