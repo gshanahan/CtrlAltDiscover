@@ -329,6 +329,9 @@ window.addEventListener('popstate', function(event) {
         if (element) {
             // Scroll to the element
             element.scrollIntoView({behavior: "smooth"});
+
+            // Manually call the scroll event listener
+            window.dispatchEvent(new Event('scroll'));
         }
     }
 });
