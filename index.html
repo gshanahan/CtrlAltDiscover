@@ -144,6 +144,15 @@
                       <a href="blog1.html" style="color: #eb4136;">Read More</a>
                     </div>
                     <!-- Repeat the above structure for other blog posts -->
+                    <div class="blog-card">
+                        <img src="assets/images/Blog1.png" alt="Post Image" style="max-width: 100%; height: auto;">
+                        <h2 class="blog-post-title" style="font-family: ARCHIVE;">Welcome to Ctrl Alt Disrupt</h2>
+                        <p class="blog-post-meta">Nov 13, 2023 by <a href="#Founder"  style="color: #eb4136;">GQS</a></p>
+                        <p>Hey there, tech enthusiasts, cybersecurity buffs, and digital wanderers!
+                          <br/><br/>
+                          Welcome to the Ctrl Alt Disrupt blog, where we're not just talking tech, we're shaking up the norms and challenging the status quo in...</p>
+                        <a href="blog1.html" style="color: #eb4136;">Read More</a>
+                      </div>
                   </div>
 
                 <!-- More blog posts go here!! -->
@@ -266,10 +275,23 @@
 
 <script>
     //url prettifier
-    
+$('a').click(function(event) {
+    event.preventDefault();
+
+    // Get the href attribute
+    var href = $(this).attr('href');
+
+    // Remove the '#' from the href attribute
+    var id = href.substring(1);
+
+    // Scroll to the element
+    $('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 500);
+});
 
     //navbar scroll
-    window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function() {
     var navbar = document.getElementById('mainNav');
     var logo = document.querySelector('.masthead-avatar');
     if (window.pageYOffset > 100) {
