@@ -299,40 +299,14 @@
                     // Scroll to the element
                     element.scrollIntoView({behavior: "smooth"});
 
-                    // Replace the '#' with '/Home/' in the href attribute
-                    var newHref = href.replace('#', '/Home/');
-
-                    // Change the URL without reloading the page
-                    history.pushState({}, '', newHref);
+                    // Change the hash part of the URL without reloading the page
+                    location.hash = href;
                 }
             } else {
                 // Allow the default action
                 window.location.href = href;
             }
         });
-    }
-});
-
-window.addEventListener('popstate', function(event) {
-    // Get the current URL
-    var currentUrl = window.location.pathname;
-
-    // If the current URL starts with '/Home/'
-    if (currentUrl.startsWith('/Home/')) {
-        // Replace '/Home/' with '#' in the current URL
-        var newUrl = currentUrl.replace('/Home/', '#');
-
-        // Get the element with the ID specified in the new URL
-        var element = document.querySelector(newUrl);
-
-        // If the element exists
-        if (element) {
-            // Scroll to the element
-            element.scrollIntoView({behavior: "smooth"});
-
-            // Manually call the scroll event listener
-            window.dispatchEvent(new Event('scroll'));
-        }
     }
 });
 
