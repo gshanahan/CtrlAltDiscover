@@ -306,16 +306,6 @@
                     history.pushState({}, '', newHref);
                 }
             } 
-            else if (href === 'https://ctrlaltdiscover.com/blog1.html') {
-                // Prevent the default action of the anchor tag
-                e.preventDefault();
-
-                // Load the 'blog1.html' page
-                window.location.href = 'https://ctrlaltdiscover.com/blog1.html';
-
-                // Change the URL to '/Blog/1' without reloading the page
-                history.pushState({}, '', 'https://ctrlaltdiscover.com/Blog/1');
-            }
             else {
                 // Allow the default action
                 window.location.href = href;
