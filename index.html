@@ -275,40 +275,7 @@
 
 <script>
     //url prettifier
-    window.addEventListener('DOMContentLoaded', (event) => {
-    // Get all the anchor tags
-    var anchors = document.querySelectorAll('a');
-
-    // Loop through all the anchor tags
-    for (let i = 0; i < anchors.length; i++) {
-        // Add an event listener to each anchor tag
-        anchors[i].addEventListener('click', function(e) {
-            // Get the href attribute
-            var href = this.getAttribute('href');
-
-            // If the href attribute starts with '#'
-            if (href.startsWith('#')) {
-                // Prevent the default action of the anchor tag
-                e.preventDefault();
-
-                // Get the element with the ID specified in the href attribute
-                var element = document.querySelector(href);
-
-                // If the element exists
-                if (element) {
-                    // Scroll to the element
-                    element.scrollIntoView({behavior: "smooth"});
-
-                    // Change the hash part of the URL without reloading the page
-                    location.hash = href;
-                }
-            } else {
-                // Allow the default action
-                window.location.href = href;
-            }
-        });
-    }
-});
+    //fml
 
     //navbar scroll
 window.addEventListener('scroll', function() {
