@@ -1,368 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Ctrl Alt Discover</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/images/TelescopeLogoWhite.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <video autoplay loop muted style="position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-            <source src="assets/videos/video (1080p).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg text-uppercase fixed-top disrupt-navbar" id="mainNav" style="justify-content: center;">
-            <div class="container" id="bar" style="margin-left: 0; margin-right: 0; width: 100%; border-radius: 20px;">
-                <a class="navbar-brand" href="#page-top">
-                    <img class="masthead-avatar" src="assets/images/CADLogoTextWhite.png" alt="Ctrl Alt Discover" style="height: 200px;"/>
-                </a>
-                <button id="navbartoggle" class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1">
-                            <a id="logoButton" class="nav-link py-3 px-0 px-lg-3 rounded" href="#Disrupt">
-                                <span class="outlined" id="logoText" class="masthead-avatar" style="color: #eb4136; font-family: Glitch; letter-spacing: 3px; font-size: x-large;">Disrupt</span><span class="outlined" >
-                            </a>
-                        </li>                        
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#About">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead text-black text-center" style="background-color: transparent; padding-top: 200px;">
-            <div class="header_container d-flex align-items-center flex-column">
-                <!-- Ctrl Alt Discover Logo -->
-                <img class="masthead-avatar mb-5" src="assets/images/RotatingCADLogo.gif" alt="Ctrl Alt Discover" style="width: 250px; z-index: 0; margin-bottom: 30px;"/>
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0" style="color: #e8e8e8; font-family: 'ARCHIVE'; z-index: 1">Ctrl Alt <span style="color: #8c52ff; z-index: 1">Discover</span></h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line" style="background-color: #e8e8e8; z-index: 1"></div>
-                    <div class="divider-custom-icon" style="z-index: 1"><img src="assets/images/TelescopeLogoWhite.png" alt="Ctrl Alt Discover Logo" style="width: 50px; z-index: 1"></div>
-                    <div class="divider-custom-line" style="background-color: #e8e8e8; z-index: 1"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0" style="color: #e8e8e8; z-index: 1">Gabriel Q. Shanahan - <span style="color: #8c52ff; z-index: 1">CEO & Founder</span></p>
-            </div>
-        </header>
-        <div style="height: 2px; background-color: black;"></div>
-        <!-- About Section-->
-        <section class="page-section text-white mb-0" id="About" style="background-color: #8c52ff; z-index: 1; position: relative;">
-            <div class="about_container" style="z-index: 1">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white" style="color: #3d3d3d; font-family: 'ARCHIVE'; z-index: 1">About Ctrl Alt <span style="color: #3d3d3d; z-index: 1">Discover</span></h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><img src="assets/images/TelescopeLogoWhite.png" alt="Ctrl Alt Discover Logo" style="width: 50px; z-index: 1"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="about-card row mx-auto">
-                    <div class="col-lg-4 ms-auto"><p class="lead"><span style="font-family: ARCHIVE;">Ctrl Alt </span><span style="color: #3d3d3d; font-family: ARCHIVE;">Discover</span> embodies the fusion of technology and innovation, a dynamic space where exploration meets technological advancement. Our vision? To bridge the gap between nature and technology, fostering a harmonious relationship that leverages the best of both worlds.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Join us on this journey as we delve into the realms of tech, unveiling innovative solutions, and navigating uncharted territories while fostering a community dedicated to discovery and progress.</p></div>
-                </div>
-                
-            </div>
-            <div class="about_container2" style="margin-top: 100px;">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white" style="color: #3d3d3d; font-family: 'ARCHIVE';">About Ctrl Alt <span class="outlined" style="color: #eb4136; font-family: Glitch; letter-spacing: 5px;">DISRUPT</span></h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><img src="assets/images/TelescopeLogoWhite.png" alt="Ctrl Alt Discover Logo" style="width: 50px"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="about-card row mx-auto">
-                    <div class="col-lg-4 ms-auto"><p class="lead"><span style="font-family: ARCHIVE;">Ctrl Alt </span><span class="outlined" style="color: #eb4136; font-family: Glitch; letter-spacing: 1px;">DISRUPT</span> redefines cybersecurity by challenging norms and offering proactive defense strategies. Our mission is to empower individuals and businesses with insights that fortify digital defenses against evolving threats.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">We're more than a blog; we're catalysts for change in cybersecurity. With innovation at our core, we aim to equip our audience with the tools to navigate and disrupt the evolving threat landscape.</p></div>
-                </div>
-                
-            </div>
-            <div id="Founder" class="about_container3" style="margin-top: 100px;">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white" style="color: #3d3d3d; font-family: 'ARCHIVE';">About Our Founder</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><img src="assets/images/TelescopeLogoWhite.png" alt="Ctrl Alt Discover Logo" style="width: 50px"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="about-card row mx-auto">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hello! I'm Gabriel, the mind behind <span style="font-family: ARCHIVE;">Ctrl Alt </span><span style="color: #3d3d3d; font-family: ARCHIVE;">Discover</span> and, subsequently, <span style="font-family: ARCHIVE;">Ctrl Alt </span><span class="outlined" style="color: #eb4136; font-family: Glitch; letter-spacing: 1px;">DISRUPT</span>. With a BS in Computer Science, specializing in Cybersecurity from Tennessee Tech University, and over a year of hands-on experience as a software test engineer within Agile teams, I'm passionate about unraveling the nuances of our digital world.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">At Ctrl Alt Discover, my mission is to delve into the depths of technology, uncovering insights that drive progress. Join me on this journey through the evolving tech landscape, where I share expertise and empower exploration in the ever-evolving digital sphere.</p></div>
-                </div>
-            </div>
-        </section>
-        <div style="height: 2px; background-color: black;"></div>
-        <!-- Ctrl Alt Disrupt -->
-        <section class="page-section text-white mb-0" id="Disrupt" style="background-color: transparent; margin-top: 0; padding-top: 0;">
-            <div id="disrupt_container" class="disrupt_container d-flex align-items-center flex-column" style="position: relative;">
-                
-                <!-- Ctrl Alt Discover Logo -->
-                <img class="masthead-avatar mb-5" src="assets/images/DisruptLogoAni.gif" alt="Ctrl Alt Disrupt" style="width: 300px; margin-bottom: 0px; padding-top: 200px;" id="DisruptLogo;"/>
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0" style="color: #e8e8e8; font-family: 'ARCHIVE'; font-size: 50px;">Ctrl Alt</h1>
-                <dive class="disrupt-text">
-                    <h10 class="disrupt">DISRUPT</h10>
-                    <h10 class="disrupt">DISRUPT</h10>
-                    <h10 class="disrupt">DISRUPT</h10>
-                </dive>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light" style="margin-top: 100px;">
-                    <div class="divider-custom-line" style="background-color: #e8e8e8;"></div>
-                    <div class="divider-custom-icon"><img src="assets/images/TelescopeLogoWhite.png" alt="Ctrl Alt Discover Logo" style="width: 50px"></div>
-                    <div class="divider-custom-line" style="background-color: #e8e8e8;"></div>
-                </div>
 
-                <div class="blog-grid">
-                    <div class="blog-card">
-                      <img src="assets/images/Blog1.png" alt="Post Image" style="max-width: 100%; height: auto;">
-                      <h2 class="blog-post-title" style="font-family: ARCHIVE;">Welcome to Ctrl Alt Disrupt</h2>
-                      <p class="blog-post-meta">Nov 13, 2023 by <a href="#Founder"  style="color: #eb4136;">GQS</a></p>
-                      <p>Hey there, tech enthusiasts, cybersecurity buffs, and digital wanderers!
-                        <br/><br/>
-                        Welcome to the Ctrl Alt Disrupt blog, where we're not just talking tech, we're shaking up the norms and challenging the status quo in...</p>
-                      <a href="https://ctrlaltdiscover.com/blog1.html" style="color: #eb4136;">Read More</a>
-                    </div>
-                    <!-- Repeat the above structure for other blog posts -->
-                    <div class="blog-card">
-                        <img src="assets/images/Blog1.png" alt="Post Image" style="max-width: 100%; height: auto;">
-                        <h2 class="blog-post-title" style="font-family: ARCHIVE;">Welcome to Ctrl Alt Disrupt</h2>
-                        <p class="blog-post-meta">Nov 13, 2023 by <a href="#Founder"  style="color: #eb4136;">GQS</a></p>
-                        <p>Hey there, tech enthusiasts, cybersecurity buffs, and digital wanderers!
-                          <br/><br/>
-                          Welcome to the Ctrl Alt Disrupt blog, where we're not just talking tech, we're shaking up the norms and challenging the status quo in...</p>
-                        <a href="https://ctrlaltdiscover.com/blog1.html" style="color: #eb4136;">Read More</a>
-                      </div>
-                  </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ctrl Alt Discover</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/TelescopeLogoWhite.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
 
-                <!-- More blog posts go here!! -->
-
-                
-            </div>
-        </section>
-        <div style="height: 2px; background-color: black;"></div>
-        <!-- Contact Section-->
-        <section class="page-section" id="Contact" style="background-color: #e8e8e8; position: relative; z-index: 2;">
-            <div class="contact_container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="color: #3d3d3d; font-family: 'ARCHIVE';">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><img src="assets/images/TelescopeLogo.png" alt="Ctrl Alt Discover Logo" style="width: 50px"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="e2666da7-3eb5-46c1-aec8-8b9600560553">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" style="background-color: #e8e8e8;"/>
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" style="background-color: #e8e8e8;"/>
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" style="background-color: #e8e8e8;"/>
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem; background-color: #e8e8e8;" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-xl disabled" id="submitButton" type="submit" style="background-color: #8c52ff; outline-color: #8c52ff;">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div style="height: 2px; background-color: black; position: relative; z-index: 2;"></div>
-        <!-- Footer-->
-        <footer class="footer text-center" style="background-color: #3d3d3d; position: relative; z-index: 2;">
-            <div class="footer_container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4" style="color: #e8e8e8; font-family: 'ARCHIVE';">Location</h4>
-                        <p class="lead mb-0">
-                            Knoxville, TN
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4" style="color: #e8e8e8; font-family: 'ARCHIVE';">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/gabriel-shanahan/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <a href="#About">
-                            <h4 class="text-uppercase mb-4" style="color: #e8e8e8; font-family: 'ARCHIVE';">About Ctrl Alt Discover</h4>
+<body id="page-top">
+    <video autoplay loop muted
+        style="position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+        <source src="assets/videos/video (1080p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top disrupt-navbar" id="mainNav"
+        style="justify-content: center;">
+        <div class="container" id="bar" style="margin-left: 0; margin-right: 0; width: 100%; border-radius: 20px;">
+            <a class="navbar-brand" href="#page-top">
+                <img class="masthead-avatar" src="assets/images/CADLogoTextWhite.png" alt="Ctrl Alt Discover"
+                    style="height: 200px;" />
+            </a>
+            <button id="navbartoggle"
+                class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a id="logoButton" class="nav-link py-3 px-0 px-lg-3 rounded" href="#Disrupt">
+                            <span class="outlined" id="logoText" class="masthead-avatar"
+                                style="color: #eb4136; font-family: Glitch; letter-spacing: 3px; font-size: x-large;">Disrupt</span><span
+                                class="outlined">
                         </a>
-                    </div>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#About">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead text-black text-center" style="background-color: transparent; padding-top: 200px;">
+        <div class="header_container d-flex align-items-center flex-column">
+            <!-- Ctrl Alt Discover Logo -->
+            <img class="masthead-avatar mb-5" src="assets/images/RotatingCADLogo.gif" alt="Ctrl Alt Discover"
+                style="width: 250px; z-index: 0; margin-bottom: 30px;" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0" style="color: #e8e8e8; font-family: 'ARCHIVE'; z-index: 1">
+                Ctrl Alt <span style="color: #8c52ff; z-index: 1">Discover</span></h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line" style="background-color: #e8e8e8; z-index: 1"></div>
+                <div class="divider-custom-icon" style="z-index: 1"><img src="assets/images/TelescopeLogoWhite.png"
+                        alt="Ctrl Alt Discover Logo" style="width: 50px; z-index: 1"></div>
+                <div class="divider-custom-line" style="background-color: #e8e8e8; z-index: 1"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0" style="color: #e8e8e8; z-index: 1">Gabriel Q. Shanahan
+                - <span style="color: #8c52ff; z-index: 1">CEO & Founder</span></p>
+        </div>
+    </header>
+    <div style="height: 2px; background-color: black;"></div>
+    <!-- About Section-->
+    <section class="page-section text-white mb-0" id="About"
+        style="background-color: #8c52ff; z-index: 1; position: relative;">
+        <div class="about_container" style="z-index: 1">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white"
+                style="color: #3d3d3d; font-family: 'ARCHIVE'; z-index: 1">About Ctrl Alt <span
+                    style="color: #3d3d3d; z-index: 1">Discover</span></h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><img src="assets/images/TelescopeLogoWhite.png"
+                        alt="Ctrl Alt Discover Logo" style="width: 50px; z-index: 1"></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="about-card row mx-auto">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead"><span style="font-family: ARCHIVE;">Ctrl Alt </span><span
+                            style="color: #3d3d3d; font-family: ARCHIVE;">Discover</span> embodies the fusion of
+                        technology and innovation, a dynamic space where exploration meets technological advancement.
+                        Our vision? To bridge the gap between nature and technology, fostering a harmonious relationship
+                        that leverages the best of both worlds.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">Join us on this journey as we delve into the realms of tech, unveiling innovative
+                        solutions, and navigating uncharted territories while fostering a community dedicated to
+                        discovery and progress.</p>
                 </div>
             </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white" style="background-color: #3d3d3d; position: relative; z-index: 2;">
-            <div class="copyright_container" style="color: #e8e8e8; font-family: 'ARCHIVE';"><small>Copyright &copy; Ctrl Alt Discover LLC 2023</small></div>
-        </div>
 
-                <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        </div>
+        <div class="about_container2" style="margin-top: 100px;">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white"
+                style="color: #3d3d3d; font-family: 'ARCHIVE';">About Ctrl Alt <span class="outlined"
+                    style="color: #eb4136; font-family: Glitch; letter-spacing: 5px;">DISRUPT</span></h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><img src="assets/images/TelescopeLogoWhite.png"
+                        alt="Ctrl Alt Discover Logo" style="width: 50px"></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="about-card row mx-auto">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead"><span style="font-family: ARCHIVE;">Ctrl Alt </span><span class="outlined"
+                            style="color: #eb4136; font-family: Glitch; letter-spacing: 1px;">DISRUPT</span> redefines
+                        cybersecurity by challenging norms and offering proactive defense strategies. Our mission is to
+                        empower individuals and businesses with insights that fortify digital defenses against evolving
+                        threats.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">We're more than a blog; we're catalysts for change in cybersecurity. With innovation
+                        at our core, we aim to equip our audience with the tools to navigate and disrupt the evolving
+                        threat landscape.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="Founder" class="about_container3" style="margin-top: 100px;">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white"
+                style="color: #3d3d3d; font-family: 'ARCHIVE';">About Our Founder</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><img src="assets/images/TelescopeLogoWhite.png"
+                        alt="Ctrl Alt Discover Logo" style="width: 50px"></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="about-card row mx-auto">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">Hello! I'm Gabriel, the mind behind <span style="font-family: ARCHIVE;">Ctrl Alt
+                        </span><span style="color: #3d3d3d; font-family: ARCHIVE;">Discover</span> and, subsequently,
+                        <span style="font-family: ARCHIVE;">Ctrl Alt </span><span class="outlined"
+                            style="color: #eb4136; font-family: Glitch; letter-spacing: 1px;">DISRUPT</span>. With a BS
+                        in Computer Science, specializing in Cybersecurity from Tennessee Tech University, and over a
+                        year of hands-on experience as a software test engineer within Agile teams, I'm passionate about
+                        unraveling the nuances of our digital world.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">At Ctrl Alt Discover, my mission is to delve into the depths of technology,
+                        uncovering insights that drive progress. Join me on this journey through the evolving tech
+                        landscape, where I share expertise and empower exploration in the ever-evolving digital sphere.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="height: 2px; background-color: black;"></div>
+    <!-- Ctrl Alt Disrupt -->
+    <section class="page-section text-white mb-0" id="Disrupt"
+        style="background-color: transparent; margin-top: 0; padding-top: 0;">
+        <div id="disrupt_container" class="disrupt_container d-flex align-items-center flex-column"
+            style="position: relative;">
+
+            <!-- Ctrl Alt Discover Logo -->
+            <img class="masthead-avatar mb-5" src="assets/images/DisruptLogoAni.gif" alt="Ctrl Alt Disrupt"
+                style="width: 300px; margin-bottom: 0px; padding-top: 200px;" id="DisruptLogo;" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0"
+                style="color: #e8e8e8; font-family: 'ARCHIVE'; font-size: 50px;">Ctrl Alt</h1>
+            <dive class="disrupt-text">
+                <h10 class="disrupt">DISRUPT</h10>
+                <h10 class="disrupt">DISRUPT</h10>
+                <h10 class="disrupt">DISRUPT</h10>
+            </dive>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light" style="margin-top: 100px;">
+                <div class="divider-custom-line" style="background-color: #e8e8e8;"></div>
+                <div class="divider-custom-icon"><img src="assets/images/TelescopeLogoWhite.png"
+                        alt="Ctrl Alt Discover Logo" style="width: 50px"></div>
+                <div class="divider-custom-line" style="background-color: #e8e8e8;"></div>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="assets/images/Blog1.png" alt="Post Image" style="max-width: 100%; height: auto;">
+                    <h2 class="blog-post-title" style="font-family: ARCHIVE;">Welcome to Ctrl Alt Disrupt</h2>
+                    <p class="blog-post-meta">Nov 13, 2023 by <a href="#Founder" style="color: #eb4136;">GQS</a></p>
+                    <p>Hey there, tech enthusiasts, cybersecurity buffs, and digital wanderers!
+                        <br /><br />
+                        Welcome to the Ctrl Alt Disrupt blog, where we're not just talking tech, we're shaking up the
+                        norms and challenging the status quo in...
+                    </p>
+                    <a href="https://ctrlaltdiscover.com/blog1.html" style="color: #eb4136;">Read More</a>
+                </div>
+                <!-- Repeat the above structure for other blog posts -->
+                <div class="blog-card">
+                    <img src="assets/images/Blog1.png" alt="Post Image" style="max-width: 100%; height: auto;">
+                    <h2 class="blog-post-title" style="font-family: ARCHIVE;">Welcome to Ctrl Alt Disrupt</h2>
+                    <p class="blog-post-meta">Nov 13, 2023 by <a href="#Founder" style="color: #eb4136;">GQS</a></p>
+                    <p>Hey there, tech enthusiasts, cybersecurity buffs, and digital wanderers!
+                        <br /><br />
+                        Welcome to the Ctrl Alt Disrupt blog, where we're not just talking tech, we're shaking up the
+                        norms and challenging the status quo in...
+                    </p>
+                    <a href="https://ctrlaltdiscover.com/blog1.html" style="color: #eb4136;">Read More</a>
+                </div>
+            </div>
+
+            <!-- More blog posts go here!! -->
+
+
+        </div>
+    </section>
+    <div style="height: 2px; background-color: black;"></div>
+    <!-- Contact Section-->
+    <section class="page-section" id="Contact" style="background-color: #e8e8e8; position: relative; z-index: 2;">
+        <div class="contact_container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"
+                style="color: #3d3d3d; font-family: 'ARCHIVE';">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><img src="assets/images/TelescopeLogo.png" alt="Ctrl Alt Discover Logo"
+                        style="width: 50px"></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="e2666da7-3eb5-46c1-aec8-8b9600560553">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                data-sb-validations="required" style="background-color: #e8e8e8;" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" style="background-color: #e8e8e8;" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                data-sb-validations="required" style="background-color: #e8e8e8;" />
+                            <label for="phone">Phone number</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..."
+                                style="height: 10rem; background-color: #e8e8e8;"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <button class="btn btn-xl disabled" id="submitButton" type="submit"
+                            style="background-color: #8c52ff; outline-color: #8c52ff;">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="height: 2px; background-color: black; position: relative; z-index: 2;"></div>
+    <!-- Footer-->
+    <footer class="footer text-center" style="background-color: #3d3d3d; position: relative; z-index: 2;">
+        <div class="footer_container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4" style="color: #e8e8e8; font-family: 'ARCHIVE';">Location</h4>
+                    <p class="lead mb-0">
+                        Knoxville, TN
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4" style="color: #e8e8e8; font-family: 'ARCHIVE';">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.linkedin.com/in/gabriel-shanahan/" target="_blank"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <a href="#About">
+                        <h4 class="text-uppercase mb-4" style="color: #e8e8e8; font-family: 'ARCHIVE';">About Ctrl Alt
+                            Discover</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white"
+        style="background-color: #3d3d3d; position: relative; z-index: 2;">
+        <div class="copyright_container" style="color: #e8e8e8; font-family: 'ARCHIVE';"><small>Copyright &copy; Ctrl
+                Alt Discover LLC 2023</small></div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
 </html>
 
 <script>
     //url prettifier
     window.addEventListener('DOMContentLoaded', (event) => {
-    // Get all the anchor tags
-    var anchors = document.querySelectorAll('a');
+        // Get all the anchor tags
+        var anchors = document.querySelectorAll('a');
 
-    // Loop through all the anchor tags
-    for (let i = 0; i < anchors.length; i++) {
-        // Add an event listener to each anchor tag
-        anchors[i].addEventListener('click', function(e) {
-            // Get the href attribute
-            var href = this.getAttribute('href');
+        // Loop through all the anchor tags
+        for (let i = 0; i < anchors.length; i++) {
+            // Add an event listener to each anchor tag
+            anchors[i].addEventListener('click', function (e) {
+                // Get the href attribute
+                var href = this.getAttribute('href');
 
-            // If the href attribute starts with '#'
-            if (href.startsWith('#')) {
-                // Prevent the default action of the anchor tag
-                e.preventDefault();
+                // If the href attribute starts with '#'
+                if (href.startsWith('#')) {
+                    // Prevent the default action of the anchor tag
+                    e.preventDefault();
 
-                // Get the element with the ID specified in the href attribute
-                var element = document.querySelector(href);
+                    // Get the element with the ID specified in the href attribute
+                    var element = document.querySelector(href);
 
-                // If the element exists
-                if (element) {
-                    // Scroll to the element
-                    element.scrollIntoView({behavior: "smooth"});
+                    // If the element exists
+                    if (element) {
+                        // Scroll to the element
+                        element.scrollIntoView({ behavior: "smooth" });
 
-                    // Replace the '#' with '/Home/' in the href attribute
-                    var newHref = href.replace('#', '/Home/');
+                        // Replace the '#' with '/Home/' in the href attribute
+                        var newHref = href.replace('#', '/Home/');
 
-                    // Change the URL without reloading the page
-                    history.pushState({}, '', newHref);
+                        // Change the URL without reloading the page
+                        history.pushState({}, '', newHref);
+                    }
                 }
-            } 
-            else {
-                // Allow the default action
-                window.location.href = href;
-            }
-        });
-    }
-});
-
-window.addEventListener('popstate', function(event) {
-    // Get the current URL
-    var currentUrl = window.location.pathname;
-
-    // If the current URL starts with '/Home/'
-    if (currentUrl.startsWith('/Home/')) {
-        // Replace '/Home/' with '#' in the current URL
-        var newUrl = currentUrl.replace('/Home/', '#');
-
-        // Get the element with the ID specified in the new URL
-        var element = document.querySelector(newUrl);
-
-        // If the element exists
-        if (element) {
-            // Scroll to the element
-            element.scrollIntoView({behavior: "smooth"});
+                else {
+                    // Allow the default action
+                    window.location.href = href;
+                }
+            });
         }
-    }
-});
+    });
+
+    window.addEventListener('popstate', function (event) {
+        // Get the current URL
+        var currentUrl = window.location.pathname;
+
+        // If the current URL starts with '/Home/'
+        if (currentUrl.startsWith('/Home/')) {
+            // Replace '/Home/' with '#' in the current URL
+            var newUrl = currentUrl.replace('/Home/', '#');
+
+            // Get the element with the ID specified in the new URL
+            var element = document.querySelector(newUrl);
+
+            // If the element exists
+            if (element) {
+                // Scroll to the element
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    });
 
     //navbar scroll
-window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('mainNav');
-    var logo = document.querySelector('.masthead-avatar');
-    if (window.pageYOffset > 100) {
-        navbar.style.height = '60px';
-        logo.style.height = '120px';
-    } else {
-        navbar.style.height = '100px';
-        logo.style.height = '200px';
-    }
-});
+    window.addEventListener('scroll', function () {
+        var navbar = document.getElementById('mainNav');
+        var logo = document.querySelector('.masthead-avatar');
+        if (window.pageYOffset > 100) {
+            navbar.style.height = '60px';
+            logo.style.height = '120px';
+        } else {
+            navbar.style.height = '100px';
+            logo.style.height = '200px';
+        }
+    });
 
-window.addEventListener('scroll', function() {
-  var navbar = document.getElementById('mainNav');
-  var bar = document.getElementById('bar');
-  var aboutSection = document.getElementById('About');
-  var aboutPosition = aboutSection.getBoundingClientRect().top;
+    window.addEventListener('scroll', function () {
+        var navbar = document.getElementById('mainNav');
+        var bar = document.getElementById('bar');
+        var aboutSection = document.getElementById('About');
+        var aboutPosition = aboutSection.getBoundingClientRect().top;
 
-  if (window.scrollY >= aboutPosition) {
-    navbar.style.backgroundColor = '#3d3d3d'; // Change this to the color you want
-    if (window.matchMedia("(max-width: 991px)").matches) {
-        bar.style.backgroundColor = '#3d3d3d';
-    } else {
-        bar.style.backgroundColor = 'transparent';
-    }
-  } else {
-    navbar.style.backgroundColor = 'transparent';
-    bar.style.backgroundColor = 'transparent';
-  }
-});
+        if (window.scrollY >= aboutPosition) {
+            navbar.style.backgroundColor = '#3d3d3d'; // Change this to the color you want
+            if (window.matchMedia("(max-width: 991px)").matches) {
+                bar.style.backgroundColor = '#3d3d3d';
+            } else {
+                bar.style.backgroundColor = 'transparent';
+            }
+        } else {
+            navbar.style.backgroundColor = 'transparent';
+            bar.style.backgroundColor = 'transparent';
+        }
+    });
 </script>
