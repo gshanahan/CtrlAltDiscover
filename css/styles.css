@@ -182,6 +182,13 @@
   }
 }
 
+.rounded {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
 .row {
   justify-content: center;
 }
